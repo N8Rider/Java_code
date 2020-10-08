@@ -48,7 +48,8 @@ class Maxfind{
 					break;
 
 				case 4: System.out.println("Input two number: ");
-					
+					double g = sc.nextDouble();
+					double h = sc.nextDouble();
 					double res3 = mt.max(g,h);
 					System.out.println("Maximum between "+g+" & "+h+" is = "+res3);
 					break;
