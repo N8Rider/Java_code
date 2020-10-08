@@ -3,8 +3,18 @@ import java.util.Scanner;
 class MethOverload{
 
 
-	double max(double a,int b){return ((a>b)?a:b);}
-	double max(double a,double b){return ((a>b)?a:b);}
+	double max(double a,int b){
+		if(a>b)
+			retrun a;
+		else
+			return b;
+	}
+	double max(double a,double b){
+		if(a>b)
+			retrun a;
+		else
+			return b;
+	}
 
 }
 class Maxfind{
