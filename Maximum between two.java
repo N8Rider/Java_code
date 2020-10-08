@@ -1,20 +1,11 @@
 import java.util.Scanner;
 
 class MethOverload{
+	int max(int a,int b){return ((a>b)?a:b);}
+	double max(int a,double b){return ((a>b)?a:b);}
+	double max(double a,int b){return ((a>b)?a:b);}
+	double max(double a,double b){return ((a>b)?a:b);}
 
-
-	double max(double a,int b){
-		if(a>b)
-			retrun a;
-		else
-			return b;
-	}
-	double max(double a,double b){
-		if(a>b)
-			retrun a;
-		else
-			return b;
-	}
 
 }
 class Maxfind{
@@ -29,7 +20,7 @@ class Maxfind{
 				case 1: System.out.println("Input two number: ");
 					int a = sc.nextInt();
 					int b = sc.nextInt();
-					double res = mt.max(a,b);
+					int res = mt.max(a,b);
 					System.out.println("Maximum between "+a+" & "+b+" is = "+res);
 					break;
 
